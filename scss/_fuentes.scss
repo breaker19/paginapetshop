@@ -1,0 +1,33 @@
+
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src: url("../assets/fonts/HelveticaNeueBold.otf");
+}
+@font-face {
+  font-family: 'AkzidGroProLig';
+  src: url("../assets/fonts/AkzidGroProLig.otf");
+}
+h1{
+font: {
+size:$fontsize;
+weight: 600;
+family:$tipo;
+}
+
+} 
+
+h2{
+	font:{
+	size:$fontsizeh2;	
+	weight: 600;
+	family: $tipo;
+}
+text-align: $tituloscentrados;
+}
+h3 {
+	font-size: $fontsizeh3;
+}
+
+p {
+	font-family: $tipoparrafo;
+}

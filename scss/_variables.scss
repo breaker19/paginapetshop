@@ -1,0 +1,31 @@
+$bodymargin: 0;
+$bodypadding: 0;
+$flex: flex;
+$grid: grid;
+
+$height100: 100%;
+$width100: 100%;
+$colortitulo: #f53e5e;
+$colorsecundario: #D69B3A;
+$footerbackground: black;
+$blanco: #fff;
+$textosnegro: #000;
+$positiontitulo: absolute;
+$tituloscentrados: center;
+$titulosizquierda: left;
+$titulosderecha: right;
+$tipo: 'HelveticaNeueBold';
+$footertexto: #fff;
+$textogris: #f2f2f2;
+$fontsize: 60px;
+$fontsizemobile: 35px;
+$fontsizeh2: 34px;
+$fontsizeh3: 16px;
+$tituloscentrados: center;
+$tipo: 'HelveticaNeueBold';
+$tipoparrafo: 'AkzidGroProLig';
+
+* {
+	margin: $bodymargin;
+	padding: $bodypadding;
+}

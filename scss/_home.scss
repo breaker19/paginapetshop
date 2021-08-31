@@ -1,0 +1,84 @@
+.trescolumnas {
+        padding: 0px 100px;
+    display: $flex;
+    justify-content: center;
+     @media only screen and (max-width: 480px) {
+        display: $flex;
+    flex-direction: column;
+    padding: 0px 20px;
+     }
+
+    }
+
+
+    @mixin testimonios ($bcolor, $Color) {
+background-color: $bcolor;
+  color: $Color;
+    text-align: center;
+    width: $width100;
+    border-radius: 15px;
+    padding: 40px 13px;
+  
+    margin: 0px 20px 20px 0px;
+    @media only screen and (max-width: 480px) {
+        width: $width100;
+        margin: 33px 20px 20px 0px;
+    };
+}
+
+.testimonios, .trescolumnas__homecolumnas{ @include testimonios (#f3f3f3, var(--charcoal-grey),); };
+
+
+
+@mixin redes ($top) {
+    height: $height100 /5;
+    position: fixed;
+    right:  80px;
+    line-height: 80px;
+    z-index: 999;
+    top: $top;
+}
+.btn-whatsapp{ @include redes (14%,); };
+.btn-whatsapp2{ @include redes (8%); };
+.btn-whatsapp3{ @include redes (20%,); };
+.btn-whatsapp4{ @include redes (0%,); };
+
+.btn-whatsapp, .btn-whatsapp2, .btn-whatsapp3, .btn-whatsapp4 {
+    display: none;
+}
+ 
+
+
+
+
+
+
+@mixin columnas ($tipo, $bodypadding, $tituloscentrados, $margin) {
+font-family: $tipo;
+padding: $bodypadding;
+text-align: $tituloscentrados;
+letter-spacing: 1px;
+margin: $margin;
+font-size: 16px;
+
+}
+
+
+
+.homeColumnaUno { @include columnas ($tipo, $bodypadding, $tituloscentrados, 30px 33px,); };
+@media only screen and (max-width: 480px) {
+    .homeColumnaUno { @include columnas ($tipo, $bodypadding, $tituloscentrados, 15px 10px,); };
+}
+
+
+
+
+@mixin redonda ($radio, $posicion, $bottom, $colortitulo) 
+
+    {
+    border-radius: $radio;
+    position: $posicion;
+    bottom: $bottom;
+    border: 2px solid $colortitulo;
+    }
+    .imagenredonda { @include redonda (100%, relative, 20px, #f53e5e); };

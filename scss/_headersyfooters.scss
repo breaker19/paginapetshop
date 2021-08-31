@@ -1,0 +1,148 @@
+
+
+
+.titulos {
+	&__centrados{
+		position: $positiontitulo;
+	top: 200px;
+    text-align: center;
+    width: $width100;
+    &--subtitulos{
+    	position: $positiontitulo;
+    top: 40%;
+    text-align: center;
+    width: $width100;
+    color: #fff;
+    font-size: 20px;
+    }
+	}
+}
+.titulosMobile {
+    &__centrados{
+        position: $positiontitulo;
+    top: 30%;
+    width: $width100;
+    text-align: center;
+    font-size: 35px;
+
+    &--subtitulos{
+        position: $positiontitulo;
+    top: 45%;
+    left: 38%;
+    color: #fff;
+    font-size: 20px;
+    @media only screen and (max-width: 480px) {
+    top: 40%;
+    left: 22%;
+    color: $blanco;
+    font-size: 12px;
+    }
+    }
+    }
+}
+
+
+
+.navegacion{
+    padding: 15px;
+    &__englobar {
+        display: $flex;
+align-items: center;
+justify-content: center;
+&--lista{
+      list-style-type: none;
+  padding: 20px;
+  &--enlace {
+    text-decoration: none;
+    color: $colortitulo;
+    font-family: $tipo;
+  }
+  :hover{
+    color: $colortitulo;
+  }
+}
+
+    }
+}
+
+.footer {
+    display: $flex;
+    background-color: $footerbackground;
+    padding: 20px;
+    justify-content: space-between;
+    text-align: left;
+    @media only screen and (max-width: 480px) {
+            display: $grid;
+    background-color: black;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto auto;
+    width: 100%;
+    padding: 10px 10px;
+    justify-content: space-around;
+    grid-row-gap: 15px;
+    grid-column-gap: 20px;
+    padding: 10px 0;
+    }
+    p {
+            color: $blanco;
+        }
+    &__columnaUno {
+        text-align: $tituloscentrados;
+        @media only screen and (max-width: 480px) {
+    width: 50%;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    font-size: 12px;
+        }
+    }
+
+}
+
+.footerColumnaDos {
+display: $flex;
+    flex-direction: column;
+    @media only screen and (max-width: 480px) {
+            grid-column-start: 2;
+    grid-row-start: 2;
+    align-items: center;
+    }
+    &__englobar {
+        &--lista{
+            list-style-type: none;
+            &--enlace {
+             color: $colortitulo;
+            text-decoration: none;
+            font-family: $tipo;
+            }
+        }
+    }
+    
+
+}
+.footerColumnaTres {
+       grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.footerBottom {
+      background-color: $colortitulo;
+  text-align: center;
+  padding: 10px;
+  &__texto{
+    font-size: 14px;
+font-family: $tipo;
+  color: $textosnegro;
+  &--enlace {
+  text-align: center;
+  font-family: $tipo;
+  text-decoration: none;
+  color: $textosnegro;
+  font-size: 16px;
+  }
+  }
+}

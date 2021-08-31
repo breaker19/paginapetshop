@@ -1,0 +1,77 @@
+@import "variables";
+@import "headersyfooters";
+@import "fuentes";
+@import "home";
+@import "imagenes";
+@import "contacto";
+
+
+
+.show-mobile {
+	display: none;
+	@media only screen and (max-width: 480px) {
+		display: block;
+	} 
+}
+.hide-mobile {
+	display: block;
+	@media only screen and (max-width: 480px) {
+		display: none;
+	} 
+}
+
+
+
+    
+
+.formulario {
+    &__label{
+        width: $width100;
+        &--texto {
+     margin-bottom: 0px;
+    color: $colortitulo;
+        }
+        &--input {
+    width: $width100;
+    height: 32px;
+    margin: 0;
+    border: none;
+    background: $textogris;
+    
+        }
+    }
+}
+
+
+
+@each $titulos, $color, $font, $fontmobile in (h1, $colortitulo, 60px, 34px),
+                                  (h2, $colortitulo, 34px, 20px),
+                                  (h3, $colorsecundario, 18px, 12px) {
+  #{$titulos} {
+
+    color:  $color;
+    font-size: $font;
+    @media only screen and (max-width: 480px) {
+ color:  $color;
+    font-size: $fontmobile;
+    
+}
+  }
+}
+
+
+@for $i from 1 through 10 {
+    .img#{$i}{
+        width:10%*$i;
+    }
+} 
+@for $i from 1 through 10 {
+    .height#{$i}{
+        height:10%*$i;
+    }
+}
+
+
+
+
+

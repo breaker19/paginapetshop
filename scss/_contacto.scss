@@ -1,0 +1,56 @@
+.formulario {
+    &__label{
+        width: $width100;
+        &--texto {
+     margin-bottom: 0px;
+    color: $colortitulo;
+        }
+        &--input {
+    width: $width100;
+    height: 32px;
+    margin: 0;
+    border: none;
+    background: $textogris;
+    
+        }
+    }
+}
+
+.ContactoDosColumnas {
+
+  margin: 40px 0;
+    padding: 0 100px;
+    display: flex;
+align-items: center;
+&__contactoColumnaUno {
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+    height: max-content;
+    border: solid 4px #f53e5e;
+    border-style: dashed solid;
+    &--ContactoColumnaDos {
+  width: 100%;
+  padding: 0 100px;
+}
+}
+}
+
+
+
+
+
+input[type="submit"] {
+  color:  $blanco;
+  background: $colortitulo;
+}
+
+textarea {
+    background: url(../assets/img/garfield.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+        width: $width100;
+    height: 100px;
+}
+

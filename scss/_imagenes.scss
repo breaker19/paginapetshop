@@ -1,0 +1,28 @@
+$width100: 100%;
+$flex: flex;
+$margin: 100px;
+
+
+
+.accion {
+	margin-bottom: 30px;
+	&__imagen {
+		width: $width100;
+	}
+}
+
+.galeria {
+	 display: $flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__contenedor {
+    	&--imagen {
+    		margin-left: $margin/5;
+    		margin-top: $margin/5;
+    		&
+    	    :hover{
+    			filter: grayscale(100%);
+    		}
+    	}
+    }
+}
