@@ -73,5 +73,20 @@
 
 
 
+@mixin doscolumnas ($display, $margin, $padding, $items,) {
+    display: $display;
+    margin: $margin;
+    padding: $padding;
+    align-items: $items;
+
+ }
+
+
+.englobarDosColumnas{ @include doscolumnas (flex, 40px 0, 0 100px, center,),); };
+
+ @media only screen and (max-width: 480px) {
+.englobarDosColumnas{ @include doscolumnas (block, 10px 0, 0 10px, center,),); };
+}
+
 
 

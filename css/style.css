@@ -198,7 +198,8 @@ p {
   z-index: 999;
   top: 0%; }
 
-
+.btn-whatsapp, .btn-whatsapp2, .btn-whatsapp3, .btn-whatsapp4 {
+  display: none; }
 
 .homeColumnaUno {
   font-family: "HelveticaNeueBold";
@@ -209,8 +210,6 @@ p {
   font-size: 16px; }
 
 @media only screen and (max-width: 480px) {
-  .btn-whatsapp, .btn-whatsapp2, .btn-whatsapp3, .btn-whatsapp4 {
-  display: none; }
   .homeColumnaUno {
     font-family: "HelveticaNeueBold";
     padding: 0;
@@ -387,8 +386,6 @@ h3 {
 
 .height10 {
   height: 100%; }
-
-
 /*404*/
 .notFound {
     margin-top: 53px;
@@ -402,12 +399,7 @@ tr.clasedos {
 #tabla table {
     margin: 0 auto;
 }
-.englobarDosColumnas {
-    display: flex;
-    margin: 40px 0;
-    padding: 0 100px;
-    align-items: center;
-}
+
 
 .homeColumnaDos {
 letter-spacing: 1px;
@@ -478,14 +470,6 @@ margin: 30px 33px;
    width: max-content;
 }
 
-
-
-  .englobarDosColumnas {
-    display: block;
-    margin: 10px 0;
-    padding: 0 10px;
-    align-items: center;
-}
 .homeColumnaDos {
     font-family: 'HelveticaNeueBold';
     margin: 30px 11px;
