@@ -456,7 +456,12 @@ margin: 30px 33px;
     text-transform: lowercase;
 }
 
-
+.englobarDosColumnas {
+    display: flex;
+    margin: 40px 0;
+    padding: 0 100px;
+    align-items: center;
+}
 /*MOBILE*/
 
 @media only screen and (max-width: 480px) {
